@@ -23,11 +23,12 @@ def main():
 
     # displaying data, change BTC for whichever coin data needed
     if bitcoin_data:
+        print("Data retrieved successfully.")
         print("Symbol: {}".format(bitcoin_data["data"]["BTC"]["symbol"]))
         print("Price: ${}".format(bitcoin_data["data"]["BTC"]["quote"]["USD"]["price"]))
         print("24 hour change: {}".format(bitcoin_data["data"]["BTC"]["quote"]["USD"]["percent_change_24h"]))
     else:
-        print("Failed to retrieve data")
+        print("Failed to retrieve data.")
 
 if __name__ == "__main__":
     main()
