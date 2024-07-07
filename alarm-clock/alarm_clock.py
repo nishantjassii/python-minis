@@ -19,7 +19,7 @@ def alarm(seconds):
 
         print(f"{CLEAR_AND_RETURN}Time left: {minutes_left:02d}:{seconds_left:02d}")
 
-    playsound("/Users/nishant/repos/python-minis/alarm-clock/alarm.mp3")
+    playsound("alarm.mp3") # cleared out actual directory, this works best with full path
 
 minutes = int(input("How many minutes do you want to wait?: "))
 seconds = int(input("How many seconds do you want to wait?: "))
